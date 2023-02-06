@@ -13,9 +13,9 @@ public class Main {
         int mediaFinal = (mediaAritmetica1 + mediaAritmetica2 + mediaAritmetica3) / 3;
 
         if (mediaFinal == response) {
-            System.out.println("A resposta está correta!");
+            System.out.printf("A resposta está correta!%n");
         } else {
-            System.out.printf("Sua resposta foi %d e deveria ser %d", response, mediaFinal);
+            System.out.printf("Sua resposta foi %d e deveria ser %d%n", response, mediaFinal);
         }
 
     }
