@@ -9,7 +9,7 @@ public class Fundamentos {
         int resultado = 0;
 
         // escreva seu código abaixo:
-
+        resultado = (a + b + c) / 3;
 
         return resultado;
     }
@@ -21,7 +21,7 @@ public class Fundamentos {
         int resultado = 0;
 
         // escreva seu código abaixo:
-
+        resultado = (ano * 365) + (mes * 30) + dia;
 
         return resultado;
     }
