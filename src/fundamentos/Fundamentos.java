@@ -13,4 +13,17 @@ public class Fundamentos {
 
         return resultado;
     }
+
+    // Faça um algoritmo que leia a idade de uma pessoa em dias.
+    // Considere o ano com 365 dias e os meses com 30 dias.
+    // Exemplo: 3 anos, 2 meses e 15 dias = 1170 dias.
+    public int exercicio2(int ano, int mes, int dia) {
+        int resultado = 0;
+
+        // escreva seu código abaixo:
+
+
+        return resultado;
+    }
+
 }
