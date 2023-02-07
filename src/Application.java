@@ -11,5 +11,6 @@ public class Application {
             fundamentosService.exercicio2();
             fundamentosService.exercicio3();
             fundamentosService.exercicio4();
+            fundamentosService.exercicio5();
     }
 }

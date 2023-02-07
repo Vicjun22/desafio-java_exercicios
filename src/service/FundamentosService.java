@@ -44,7 +44,7 @@ public class FundamentosService {
 
     public void exercicio3() {
 
-        int celsius = (int) (Math.random() * 36) -5;
+        int celsius = (int) (Math.random() * 36) - 5;
 
         double response = fundamentos.exercicio3(celsius);
         double fahrenheit = celsius * 1.8 + 32;
@@ -77,6 +77,24 @@ public class FundamentosService {
             System.out.printf("Resposta correta!%n%n");
         } else {
             System.out.printf("A palavra era %s. Sua resposta foi %c e deveria ser %c.%n%n", palavras[posicaoPalavraSorteada], response, caractereSorteadoMinusculo);
+        }
+    }
+
+    public void exercicio5() {
+
+        int[] valores = { 1, 4, 9, 16, 25, 36, 49, 56, 91, 100 };
+
+        int posicaoValorSorteado = (int) (Math.random() * 10);
+
+        int response = fundamentos.exercicio5(valores[posicaoValorSorteado]);
+        int raizQuadrada = (int) Math.sqrt(valores[posicaoValorSorteado]);
+
+        System.out.println("Exercício 5:");
+
+        if (response == raizQuadrada) {
+            System.out.printf("Resposta correta!%n%n");
+        } else {
+            System.out.printf("Sua resposta foi %d e deveria ser %d.%n%n", response, raizQuadrada);
         }
     }
 

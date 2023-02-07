@@ -32,7 +32,15 @@ public class Fundamentos {
     // Exemplo: palavraSorteada: "Carro", posicaoDoCaractereSorteado: 0, resposta: 'c'
     public char exercicio4(String palavraSorteada, int posicaoDoCaractereSorteado) {
 
-        //escreva seu código abaixo:
+        // escreva seu código abaixo:
         return '-';
+    }
+
+    // Encontre o resultado da raíz quadrada de "a".
+    // Se "a" for igual à 36, a resposta deverá ser igual a 6.
+    public int exercicio5(int a) {
+
+        // escreva seu código abaixo:
+        return 0;
     }
 }
