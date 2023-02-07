@@ -58,4 +58,26 @@ public class FundamentosService {
         }
     }
 
+    public void exercicio4() {
+
+        String[] palavras = { "bAnAnA", "aBACAXI", "LarAnjA", "Morango", "Uva" };
+
+        int posicaoPalavraSorteada = (int) (Math.random() * 5);
+        int posicaoCaractereSorteado = (int) (Math.random() * palavras[posicaoPalavraSorteada].length());
+
+        String palavraSorteada = palavras[posicaoPalavraSorteada];
+
+        char response = fundamentos.exercicio4(palavraSorteada, posicaoCaractereSorteado);
+        char caractereSorteado = palavras[posicaoPalavraSorteada].charAt(posicaoCaractereSorteado);
+        char caractereSorteadoMinusculo = Character.toLowerCase(caractereSorteado);
+
+        System.out.println("Exercício 4:");
+
+        if (response == caractereSorteadoMinusculo) {
+            System.out.printf("Resposta correta!%n%n");
+        } else {
+            System.out.printf("A palavra era %s. Sua resposta foi %c e deveria ser %c.%n%n", palavras[posicaoPalavraSorteada], response, caractereSorteadoMinusculo);
+        }
+    }
+
 }

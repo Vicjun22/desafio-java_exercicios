@@ -27,4 +27,12 @@ public class Fundamentos {
         // escreva seu código abaixo:
         return 0.0;
     }
+
+    // Retorne um caractere aleatório minúsculo de uma palavra aleatória vindos como parâmetro do método.
+    // Exemplo: palavraSorteada: "Carro", posicaoDoCaractereSorteado: 0, resposta: 'c'
+    public char exercicio4(String palavraSorteada, int posicaoDoCaractereSorteado) {
+
+        //escreva seu código abaixo:
+        return '-';
+    }
 }
