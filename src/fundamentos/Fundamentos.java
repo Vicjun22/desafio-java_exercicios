@@ -25,7 +25,7 @@ public class Fundamentos {
     public double exercicio3(int celsius) {
 
         // escreva seu código abaixo:
-        return 0.0;
+        return celsius * 1.8 + 32;
     }
 
     // Retorne um caractere aleatório minúsculo de uma palavra aleatória vindos como parâmetro do método.
@@ -33,7 +33,8 @@ public class Fundamentos {
     public char exercicio4(String palavraSorteada, int posicaoDoCaractereSorteado) {
 
         // escreva seu código abaixo:
-        return '-';
+        char letraSorteada = palavraSorteada.charAt(posicaoDoCaractereSorteado);
+        return Character.toLowerCase(letraSorteada);
     }
 
     // Encontre o resultado da raíz quadrada de "a".
@@ -41,6 +42,6 @@ public class Fundamentos {
     public int exercicio5(int a) {
 
         // escreva seu código abaixo:
-        return 0;
+        return (int) Math.sqrt(a);
     }
 }
