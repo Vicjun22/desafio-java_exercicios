@@ -8,7 +8,7 @@ public class Fundamentos {
     public int exercicio1(int a, int b, int c) {
 
         // escreva seu código abaixo:
-        return  (a + b + c) / 3;
+        return  ;
     }
 
     // Faça um algoritmo que leia a idade de uma pessoa em dias.
@@ -17,7 +17,7 @@ public class Fundamentos {
     public int exercicio2(int ano, int mes, int dia) {
 
         // escreva seu código abaixo:
-        return (ano * 365) + (mes * 30) + dia;
+        return ;
     }
 
     // Converta a temperatura em graus celsius para Fahrenheit
@@ -25,7 +25,7 @@ public class Fundamentos {
     public double exercicio3(int celsius) {
 
         // escreva seu código abaixo:
-        return celsius * 1.8 + 32;
+        return ;
     }
 
     // Retorne um caractere aleatório minúsculo de uma palavra aleatória vindos como parâmetro do método.
@@ -33,8 +33,7 @@ public class Fundamentos {
     public char exercicio4(String palavraSorteada, int posicaoDoCaractereSorteado) {
 
         // escreva seu código abaixo:
-        char letraSorteada = palavraSorteada.charAt(posicaoDoCaractereSorteado);
-        return Character.toLowerCase(letraSorteada);
+        return ;
     }
 
     // Encontre o resultado da raíz quadrada de "a".
@@ -42,6 +41,6 @@ public class Fundamentos {
     public int exercicio5(int a) {
 
         // escreva seu código abaixo:
-        return (int) Math.sqrt(a);
+        return ;
     }
 }
