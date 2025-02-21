@@ -10,93 +10,81 @@ public class Nivel1Service {
 
     public void exercicio1() {
 
-        int valor1 = (int) (Math.random() * 10) + 1;
-        int valor2 = (int) (Math.random() * 10) + 1;
-        int valor3 = (int) (Math.random() * 10) + 1;
-
-        Integer response = nivel1.exercicio1(valor1, valor2, valor3);
-        Integer mediaFinal = (valor1 + valor2 + valor3) / 3;
+        String response = nivel1.exercicio1();
 
         System.out.println("Exercício 1:");
 
-        if (Objects.equals(response, mediaFinal)) {
-            System.out.printf("Resposta correta!%n%n");
+        if (Objects.nonNull(response) && !response.isEmpty()) {
+            System.out.printf("Continue assim!%n%n");
         } else {
-            System.out.printf("Sua resposta foi %d e deveria ser %d.%n%n", response, mediaFinal);
+            System.out.printf("Resposta inválida.%n%n");
         }
     }
 
     public void exercicio2() {
 
-        int anos = (int) (Math.random() * 11);
-        int meses = (int) (Math.random() * 13);
-        int dias = (int) (Math.random() * 30) + 1;
+        double valor = (Math.random() * 10) + 1;
 
-        Integer response = nivel1.exercicio2(anos, meses, dias);
-        Integer qtdDiasPercorridos = (anos * 365) + (meses * 30) + dias;
+        int response = nivel1.exercicio2(valor);
+        int valorEmInteiro = (int) valor;
 
         System.out.println("Exercício 2:");
 
-        if (Objects.equals(response, qtdDiasPercorridos)) {
+        if (valorEmInteiro == response) {
             System.out.printf("Resposta correta!%n%n");
         } else {
-            System.out.printf("Sua resposta foi %d dias e deveria ser %d dias percorridos.%n%n", response, qtdDiasPercorridos);
+            System.out.printf("Sua resposta foi %d e deveria ser %d.%n%n", response, valorEmInteiro);
         }
     }
 
     public void exercicio3() {
 
-        int celsius = (int) (Math.random() * 36) - 5;
+        String[] palavras = { "B", "Z", "I", "A", "M" };
 
-        Double response = nivel1.exercicio3(celsius);
-        Double fahrenheit = celsius * 1.8 + 32;
+        int posicaoPalavraSorteada = (int) (Math.random() * 5);
+        String palavraSorteada = palavras[posicaoPalavraSorteada];
 
-        System.out.println("Exercício 3:");
+        Character response = nivel1.exercicio3(palavraSorteada);
+        Character respostaEsperada = palavraSorteada.charAt(0);
 
-        if (Objects.equals(response, fahrenheit)) {
+        if (Objects.equals(response, respostaEsperada)) {
             System.out.printf("Resposta correta!%n%n");
         } else {
-            System.out.printf("Sua resposta foi %.1fF e deveria ser %.1fF.%n%n", response, fahrenheit);
+            System.out.printf("Sua resposta está incorreta, tente novamente!%n%n");
         }
     }
 
     public void exercicio4() {
 
-        String[] palavras = { "bAnAnA", "aBACAXI", "LarAnjA", "Morango", "Uva" };
+        String[] palavras = { "automóvel", "lanterna", "escola", "programação", "java" };
 
         int posicaoPalavraSorteada = (int) (Math.random() * 5);
-        int posicaoCaractereSorteado = (int) (Math.random() * palavras[posicaoPalavraSorteada].length());
-
         String palavraSorteada = palavras[posicaoPalavraSorteada];
 
-        Character response = nivel1.exercicio4(palavraSorteada, posicaoCaractereSorteado);
-        char caractereSorteado = palavras[posicaoPalavraSorteada].charAt(posicaoCaractereSorteado);
-        Character caractereSorteadoMinusculo = Character.toLowerCase(caractereSorteado);
+        String response = nivel1.exercicio4(palavraSorteada);
+        String respostaEsperada = palavraSorteada.toUpperCase();
 
-        System.out.println("Exercício 4:");
-
-        if (Objects.equals(response, caractereSorteadoMinusculo)) {
+        if (Objects.equals(response, respostaEsperada)) {
             System.out.printf("Resposta correta!%n%n");
         } else {
-            System.out.printf("A palavra era %s. Sua resposta foi %c e deveria ser %c.%n%n", palavras[posicaoPalavraSorteada], response, caractereSorteadoMinusculo);
+            System.out.printf("Sua resposta está incorreta, tente novamente!%n%n");
         }
     }
 
     public void exercicio5() {
 
-        int[] valores = { 1, 4, 9, 16, 25, 36, 49, 56, 91, 100 };
+        String[] palavras = { "automóvel", "lanterna", "escola", "programação", "java" };
 
-        int posicaoValorSorteado = (int) (Math.random() * 10);
+        int posicaoPalavraSorteada = (int) (Math.random() * 5);
+        String palavraSorteada = palavras[posicaoPalavraSorteada];
 
-        Integer response = nivel1.exercicio5(valores[posicaoValorSorteado]);
-        Integer raizQuadrada = (int) Math.sqrt(valores[posicaoValorSorteado]);
+        Integer response = nivel1.exercicio5(palavraSorteada);
+        Integer respostaEsperada = palavraSorteada.length();
 
-        System.out.println("Exercício 5:");
-
-        if (Objects.equals(response, raizQuadrada)) {
+        if (Objects.equals(response, respostaEsperada)) {
             System.out.printf("Resposta correta!%n%n");
         } else {
-            System.out.printf("Sua resposta foi %d e deveria ser %d.%n%n", response, raizQuadrada);
+            System.out.printf("Sua resposta está incorreta, tente novamente!%n%n");
         }
     }
 }

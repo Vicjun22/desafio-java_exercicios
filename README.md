@@ -2,10 +2,25 @@
 
 Este repositório contém uma série de exercícios básicos para praticar exercicios da linguagem Java. O objetivo deste projeto é fornecer um ambiente onde os usuários possam praticar e melhorar suas habilidades em Java, com foco nos conceitos fundamentais, como variáveis, laços de repetição, estruturas condicionais e manipulação de dados.
 
+É recomendado que possua um breve conhecimento sobre classes e métodos ou que esteja acompanhado de alguém com estes conhecimentos.
+
+<br><hr>
+
 ## Exercícios
 Os exercícios implementados até o momento são:
 
 ### NÍVEL 1
+<strong>Retorno de String</strong> - Retorne no método abaixo o seu nome no formato adequado.
+
+<strong>Conversão de valores de tipos diferentes</strong> - Converta corretamente o valor 'a', vindo por parâmetro, do tipo double para o tipo int.
+
+<strong>Conversão de valores de tipos diferentes</strong> - Converta a String 'palavra' que contém 1 caractere para o tipo char.
+
+<strong>De minúsculo para maiúsculo</strong> - Converta a palavra vinda por parâmetro com caracteres minúsculos para maiúsculos (converta todos os caracteres).
+
+<strong>Tamanho da palavra</strong> - Informe o tamanho da palavra vinda por parâmetro.
+
+### NÍVEL 2
 <strong>Média Aritmética</strong> - Calculando a média de três números inteiros.
 
 <strong>Idade em Dias</strong> - Calculando a quantidade total de dias com base em anos, meses e dias.
@@ -16,8 +31,10 @@ Os exercícios implementados até o momento são:
 
 <strong>Raiz Quadrada</strong> - Calculando a raiz quadrada de um número fornecido.
 
-### NÍVEL 2
+### NÍVEL 3
 Em construção...
+
+<br><hr>
 
 ## Estrutura do Projeto
 O projeto é dividido em três pacotes principais:
@@ -27,6 +44,8 @@ O projeto é dividido em três pacotes principais:
 <strong>exercicios:</strong> Contém as definições dos exercícios e suas implementações.
 
 <strong>application:</strong> A classe principal que executa o programa.
+
+<br><hr>
 
 ## Como Executar
 Para rodar os exercícios no seu ambiente local, siga as instruções abaixo:
@@ -53,6 +72,8 @@ Para rodar os exercícios no seu ambiente local, siga as instruções abaixo:
    public static boolean executarExercicio3 = true;
 
 ```
+
+<br><hr>
 
 ## Contribuições
 Se você tiver sugestões ou encontrar problemas, sinta-se à vontade para abrir um issue.
